@@ -1,0 +1,107 @@
+.div_seccion_agrega{
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    text-align: center;
+    left:-200%;
+    align-items: center;
+    background-color: rgb(39, 179, 218);
+    position: fixed;
+    transition: all 0.4s;
+    height: calc(100% - 90px);
+    top: 90px;
+    width: 85vw;
+    overflow: auto;
+}
+.div_seccion_agrega button, input[type="submit"]{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+}
+.div_seccion_agrega.show{
+    left:0;
+}
+.div_no_words_message p{
+    font-weight: 700;
+}
+.lista_palabras{
+       border-top: 1px solid black;
+}
+.div_agrega{
+    
+    margin: 5px 5px 50px 5px;
+
+    position: relative;
+}
+.div_agrega button:hover,.div_seccion_agrega input[type="submit"]:hover{
+    cursor: pointer;
+    transform: translateY(0);
+    color: rgb(248, 60, 18);
+    outline: none;
+    
+}
+.div_agrega_buttons div{
+    padding: 25px 0 10px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+}
+.lista_palabras ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    overflow: auto;
+}
+.lista_palabras ul li{
+    list-style: none;
+    border: 1px solid black;
+    width: 40%;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    word-wrap: break-word;
+}
+.lista_palabras ul li button{
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    border-style: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 0;
+}
+.lista_palabras ul li button:hover{
+    color: black;
+}
+.lista_palabras ul li:hover{
+    background-color: rgb(186, 153, 199);
+}
+.div_agrega form .entrada_palabra{
+    border-radius: 5px;
+    height: 25px;
+}
+
+@media screen and (max-width:700px){
+    .lista_palabras ul li{
+        width: 90%;
+    }
+    .div_seccion_agrega{
+        width: 100vw;
+        top: 84px;
+        height: calc(100% - 84px);
+    }
+    #add-warning{
+        font-size: 0.7em;
+    }
+    .div_agrega_buttons div{
+        width: 80vw;
+    }
+}
