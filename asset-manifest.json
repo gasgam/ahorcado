@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ahorcado/static/css/main.e42c6090.css",
+    "main.js": "/ahorcado/static/js/main.feacfa64.js",
+    "index.html": "/ahorcado/index.html",
+    "main.e42c6090.css.map": "/ahorcado/static/css/main.e42c6090.css.map",
+    "main.feacfa64.js.map": "/ahorcado/static/js/main.feacfa64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e42c6090.css",
+    "static/js/main.feacfa64.js"
+  ]
+}
